@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liver Cirrhosis Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Liver Cirrhosis Prediction</h1>
+    <p>Predict your liver health using Machine Learning</p>
+  </header>
+
+  <main>
+    <!-- Project Description -->
+    <section class="about">
+      <h2>About This Project</h2>
+      <p>This website uses a trained Machine Learning model to predict the likelihood of liver cirrhosis based on your health parameters. Enter the details below to get your risk level instantly.</p>
+    </section>
+
+    <!-- User Input Form -->
+    <section class="form-section">
+      <h2>Health Data Input Form</h2>
+      <form id="predictForm">
+        <label>Age:
+          <input type="number" name="age" required />
+        </label>
+
+        <label>Gender:
+          <select name="gender" required>
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </label>
+
+        <label>Alcohol Consumption (quarters/day):
+          <input type="number" name="alcohol" step="0.1" required />
+        </label>
+
+        <label>Years of Alcohol Consumption:
+          <input type="number" name="duration" step="0.1" required />
+        </label>
+
+        <label>Blood Pressure (mmHg):
+          <input type="number" name="bp" required />
+        </label>
+
+        <label>Total Cholesterol (TCH):
+          <input type="number" name="tch" required />
+        </label>
+
+        <label>LDL Cholesterol:
+          <input type="number" name="ldl" required />
+        </label>
+
+        <label>HDL Cholesterol:
+          <input type="number" name="hdl" required />
+        </label>
+
+        <label>Hepatitis B Infection:
+          <select name="hepatitis_b" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </label>
+
+        <label>Hepatitis C Infection:
+          <select name="hepatitis_c" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </label>
+
+        <label>Diabetes:
+          <select name="diabetes" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </label>
+
+        <label>Obesity:
+          <select name="obesity" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </label>
+
+        <label>Family History of Cirrhosis:
+          <select name="family_history" required>
+            <option value="">Select</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </label>
+
+        <button type="submit">Predict</button>
+      </form>
+
+      <div id="result"></div>
+    </section>
+
+    <!-- Before and After Cirrhosis Image -->
+    <section class="comparison-section">
+      <h2>Before and After Cirrhosis</h2>
+      <img src="images/3.jpg" alt="Liver Before and After Cirrhosis" class="comparison-img" />
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Liver Health ML Project | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>  this is the html code
